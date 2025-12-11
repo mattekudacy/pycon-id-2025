@@ -1,0 +1,123 @@
+/* Textual CSS for AI Dashboard */
+
+/* Global screen styling */
+Screen {
+    background: $surface;
+}
+
+/* Header */
+#header {
+    height: 3;
+    background: $primary;
+    color: $text;
+    content-align: center middle;
+    text-style: bold;
+}
+
+/* Main container - horizontal split */
+#main-container {
+    height: 1fr;
+}
+
+/* Left panel - Input */
+#left-panel {
+    width: 2fr;
+    padding: 1;
+}
+
+#prompt-label {
+    height: 1;
+    padding: 0 0 1 0;
+    color: $text-muted;
+}
+
+#prompt-input {
+    height: 8;
+    border: solid $primary;
+    margin: 0 0 1 0;
+}
+
+#submit-container {
+    height: auto;
+    align: center middle;
+}
+
+#submit-btn {
+    min-width: 20;
+    margin: 1;
+}
+
+#clear-btn {
+    min-width: 20;
+    margin: 1;
+}
+
+/* Center panel - Streaming output */
+#center-panel {
+    width: 4fr;
+    padding: 1;
+}
+
+StreamingOutput {
+    height: 1fr;
+    border: solid $primary;
+    background: $surface;
+}
+
+StreamingOutput > Static {
+    padding: 1;
+}
+
+/* Right panel - Metrics & Lifecycle */
+#right-panel {
+    width: 2fr;
+    padding: 1;
+}
+
+MetricsPanel {
+    height: auto;
+    margin: 0 0 1 0;
+}
+
+LifecyclePanel {
+    height: auto;
+}
+
+/* Activity log - collapsible bottom panel */
+#log-container {
+    height: 12;
+    border-top: solid $primary;
+    padding: 1;
+}
+
+#log-container.hidden {
+    display: none;
+}
+
+ActivityLog {
+    height: 1fr;
+    border: solid $accent;
+    background: $surface-darken-1;
+}
+
+/* Footer with shortcuts */
+Footer {
+    background: $primary-darken-1;
+}
+
+/* Status indicator */
+.status-idle {
+    color: $text-muted;
+}
+
+.status-running {
+    color: $warning;
+}
+
+.status-completed {
+    color: $success;
+}
+
+.status-error {
+    color: $error;
+}
