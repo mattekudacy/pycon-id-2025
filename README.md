@@ -383,3 +383,7 @@ If you have questions about the code or Textual:
 **Built with ❤️ for PyCon ID 2025**
 
 *Happy building! 🚀*
+
+---
+
+This line was added by an AI via Pull Request.
